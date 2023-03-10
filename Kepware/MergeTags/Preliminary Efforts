@@ -1,0 +1,18 @@
+Steps to Combine Data
+1. In REAL Data
+  a. ItemName - Make a copy column to the left - Rename column to Specifier
+  b. Highlight entire column. 
+    1. Click Text to Column
+    2. Select Delimiter
+    3. Choose other
+    4. enter a colon :
+    5. Repeat for period .
+This should create a column comprised of only tag specifiers.
+2. In BLL - Rovisys alias tag CSV
+  a. Copy the SPECIFIER column the right
+  b. Create copy of data using TOUPPER() to make all tags upper case.
+3. Run matrikon.py script to create a new folder full of tags/alias.
+
+
+The original implementation was meant to work for matrikon csv format.
+However, it was reworked when Kepware was determined to be a better fit for this particular situation.
